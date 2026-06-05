@@ -3,7 +3,7 @@ const app = express();
 const path = require("node:path");
 const { indexRouter } = require("./routes/indexRouter");
 const messageRouter = require("./routes/messageRouter");
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
