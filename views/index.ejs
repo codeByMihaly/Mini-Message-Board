@@ -1,0 +1,18 @@
+<%- include("./partials/header", { links: links }); %>
+
+<main id="container">
+  <h2 id="message-header-id">All Messages</h2>
+  <div id="messages">
+    <% messages.forEach((msg, index) => { %>
+    <div class="message-card">
+      <h2><%= msg.text %></h2>
+      <h3><%= msg.user %></h3>
+      <h5><%= msg.added.toDateString() %></h5>
+      <a href="/message/<%= index %>">
+        <button>Open message</button>
+      </a>
+    </div>
+    <% }) %>
+  </div>
+</main>
+<%- include('./partials/footer', { links: links}) %>

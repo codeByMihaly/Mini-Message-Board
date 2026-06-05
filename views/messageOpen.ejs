@@ -1,0 +1,11 @@
+<%- include('./partials/header') %>
+<main id="message-container">
+  <h1>Message Details</h1>
+  <div class="detailed-container">
+    <h2><%= msg.text %></h2>
+    <h3>Author: <%= msg.user %></h3>
+    <h5>Date: <%= msg.added.toDateString() %></h5>
+  </div>
+</main>
+
+<%- include('./partials/footer') %>

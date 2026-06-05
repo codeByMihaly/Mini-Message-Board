@@ -1,0 +1,16 @@
+<header>
+  <div id="header-id-div">
+    <h2>Message Board</h2>
+    <nav>
+      <ul>
+        <% for (let i = 0; i < links.length; i++) { %>
+        <li>
+          <a href="<%= links[i].href %>">
+            <span><%= links[i].text %></span>
+          </a>
+        </li>
+        <% } %>
+      </ul>
+    </nav>
+  </div>
+</header>
