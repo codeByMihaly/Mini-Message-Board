@@ -27,29 +27,6 @@ Mini Message Board is a simple Node.js + Express web application that allows use
 - Modular routing using Express Router
 
 - In‑memory message storage (no database required)
-
-# Project Structure
-
-project/
-│
-├── app.js
-├── routes/
-│   ├── indexRouter.js
-│   └── messageRouter.js
-│
-├── views/
-│   ├── index.ejs
-│   ├── messageOpen.ejs
-│   ├── messageWrite.ejs
-│   ├── form.ejs
-│   └── partials/
-│       ├── header.ejs
-│       └── footer.ejs
-│
-├── public/
-│   └── style.css
-│
-└── package.json
  
 # Technologies Used
 
